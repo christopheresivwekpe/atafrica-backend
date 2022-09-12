@@ -17,7 +17,11 @@ const app = express();
 
 /** ORIGINS THAT HAS ACCESS TO THE SERVER */
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://atafrica-robo-advisor.herokuapp.com'],
+  origin: [
+    'http://localhost:3000', 
+    'https://atafrica-robo-advisor.herokuapp.com',
+    'https://atafrica-robo-advisor.vercel.app'
+  ],
   optionsSuccessStatus: 200
 }));
 
